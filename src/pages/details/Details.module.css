@@ -1,0 +1,169 @@
+.page {
+  background: var(--white);
+  padding-bottom: 6rem;
+}
+
+.header {
+  text-align: center;
+  padding: 5rem 2rem 3.5rem;
+  background: var(--off-white);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.eyebrow {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 300;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.hairline {
+  width: 44px;
+  height: 0.5px;
+  background: var(--blush-light);
+  margin: 0 auto 1.2rem;
+}
+
+.subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--warm-soft);
+}
+
+.section {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding: 0 2rem;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+}
+
+.eventCard {
+  background: var(--off-white);
+  padding: 2rem 1.6rem;
+}
+
+.tag {
+  font-size: 0.57rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--blush);
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.venueName {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.4rem;
+}
+
+.time {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--charcoal);
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.address {
+  font-size: 0.78rem;
+  color: var(--warm-mid);
+  line-height: 1.7;
+  white-space: pre-line;
+  margin-bottom: 0.8rem;
+  border-left: 2px solid var(--blush-light);
+  padding-left: 0.8rem;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: var(--warm-soft);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.dress { font-size: 0.75rem; color: var(--warm-mid); }
+.dress em { color: var(--blush); font-style: normal; }
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid var(--border);
+}
+
+.faqItem {
+  padding: 1.4rem 1.6rem;
+  border-bottom: 0.5px solid var(--border);
+  background: var(--off-white);
+}
+
+.faqItem:last-child { border-bottom: none; }
+
+.faqQ {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.faqA {
+  font-size: 0.8rem;
+  color: var(--warm-mid);
+  line-height: 1.8;
+}
+
+.accom {
+  max-width: 560px;
+  margin: 4rem auto 0;
+  padding: 2.2rem 2rem;
+  text-align: center;
+  background: var(--cream);
+  border: 0.5px solid var(--border);
+}
+
+.accomTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.accomSub {
+  font-size: 0.82rem;
+  color: var(--warm-mid);
+  line-height: 1.9;
+}
+
+.accomSub strong { color: var(--charcoal); font-weight: 400; }
+
+@media (max-width: 680px) {
+  .eventsGrid { grid-template-columns: 1fr; }
+}

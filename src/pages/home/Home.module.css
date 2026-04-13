@@ -1,0 +1,137 @@
+.page {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 90%, rgba(192,136,128,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 10%, rgba(192,136,128,0.07) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.sprig {
+  position: absolute;
+  font-size: 3.5rem;
+  opacity: 0.06;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.tl { top: 2rem;    left: 2rem;  transform: rotate(-30deg); }
+.tr { top: 2rem;    right: 2rem; transform: rotate(30deg);  }
+.bl { bottom: 2rem; left: 2rem;  transform: rotate(20deg);  }
+.br { bottom: 2rem; right: 2rem; transform: rotate(-20deg); }
+
+.eyebrow {
+  font-size: 0.6rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 1.2rem;
+}
+
+.names {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  color: var(--charcoal);
+}
+
+.names em { font-style: italic; color: var(--blush); }
+
+.hairline {
+  width: 52px;
+  height: 0.5px;
+  background: var(--blush-light);
+  margin: 0 auto 1.2rem;
+}
+
+.weddingDate {
+  font-size: 0.67rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--warm-soft);
+  margin-bottom: 0.3rem;
+}
+
+.location {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--warm-soft);
+  margin-bottom: 2.6rem;
+}
+
+.countdown {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 2.6rem;
+  border: 0.5px solid var(--border);
+  background: var(--off-white);
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.1rem 1.6rem;
+  border-right: 0.5px solid var(--border);
+}
+
+.unit:last-child { border-right: none; }
+
+.num {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.54rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--warm-soft);
+  margin-top: 6px;
+}
+
+.rsvpBtn {
+  display: inline-block;
+  background: var(--charcoal);
+  color: var(--cream);
+  padding: 0.85rem 3rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  border: none;
+  transition: background 0.22s ease;
+  margin-bottom: 1rem;
+}
+
+.rsvpBtn:hover { background: var(--blush); }
+
+.sub {
+  font-size: 0.75rem;
+  color: var(--warm-soft);
+}
+
+.sub strong { color: var(--charcoal); font-weight: 400; }
+
+@media (max-width: 560px) {
+  .unit { padding: 0.9rem 1rem; }
+  .num  { font-size: 1.8rem; }
+}

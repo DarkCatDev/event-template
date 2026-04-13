@@ -1,0 +1,39 @@
+.footer {
+  background: var(--cream);
+  border-top: 0.5px solid var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.monogram {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.6rem;
+  color: var(--charcoal);
+}
+
+.monogram em { font-style: italic; color: var(--blush); }
+
+.date {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--warm-soft);
+  margin-bottom: 1.2rem;
+}
+
+.divider {
+  width: 36px;
+  height: 0.5px;
+  background: var(--blush-light);
+  margin: 0 auto 1.2rem;
+}
+
+.note {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--warm-soft);
+}
